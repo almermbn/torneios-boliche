@@ -1,0 +1,15 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "target": "ESNext",
+		"module": "ESNext",
+		"resolveJsonModule": true,
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"moduleResolution": "Node",
+		"allowSyntheticDefaultImports": true,
+		"composite": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
